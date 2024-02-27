@@ -16,4 +16,5 @@ jobs:
           user: "tombeev2"
           password: "#jey&32%fr"
           command: |
-            git -v
+            cd node-nest-deploy
+            ssh localhost -p 222
