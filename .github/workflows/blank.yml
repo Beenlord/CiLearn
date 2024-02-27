@@ -13,7 +13,6 @@ jobs:
         uses: nekiro/ssh-job@v1.0.5
         with:
           host: "tombeev2.beget.tech"
-          port: 222
           user: "tombeev2"
           password: "#jey&32%fr"
           command: |
