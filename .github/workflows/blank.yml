@@ -11,8 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Install expect
+        run: apt install expect
+
       - name: Run a one-line script
         run: |
+          set timeout 1
           spawn ssh tombeev2@tombeev2.beget.tech
           expect "password:"
           send "#jey&32%fr\r";
