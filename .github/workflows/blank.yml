@@ -16,4 +16,6 @@ jobs:
           user: "tombeev2"
           password: "#jey&32%fr"
           command: |
-            ls -lh
+            spawn ssh tombeev2@tombeev2.beget.tech
+            expect "password:"
+            send "#jey&32%fr\r"
