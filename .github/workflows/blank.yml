@@ -6,13 +6,14 @@ on:
     branches: [ "main" ]
 
 jobs:
-  call:
+  upload:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Install expect
-        run: sudo apt-get install -y expect
-
-      - name: Run a one-line script
-        run: ls -lh .
+      - name: ssh-job
+        uses: nekiro/ssh-job@v1.0.5
+        with:
+          host: tombeev2.beget.tech
+          user: tombeev2
+          password: #jey&32%fr
+          command: |
+            ls -lh
