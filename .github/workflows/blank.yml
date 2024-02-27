@@ -12,8 +12,8 @@ jobs:
       - name: ssh-job
         uses: nekiro/ssh-job@v1.0.5
         with:
-          host: tombeev2.beget.tech
-          user: tombeev2
-          password: #jey&32%fr
+          host: "tombeev2.beget.tech"
+          user: "tombeev2"
+          password: "#jey&32%fr"
           command: |
             ls -lh
