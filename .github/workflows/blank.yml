@@ -16,6 +16,7 @@ jobs:
 
       - name: Run a one-line script
         run: |
+          #!/usr/bin/expect -f
           set timeout 1
           spawn ssh tombeev2@tombeev2.beget.tech
           expect "password:"
